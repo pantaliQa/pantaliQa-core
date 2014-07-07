@@ -1,0 +1,6 @@
+#N canvas 735 179 450 300 10;
+#X obj 80 103 initbang;
+#X obj 136 104 loadbang;
+#X obj 116 146 s Qwin.getdim;
+#X connect 0 0 2 0;
+#X connect 1 0 2 0;

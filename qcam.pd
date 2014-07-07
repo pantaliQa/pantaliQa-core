@@ -1,0 +1,8 @@
+#N canvas 7 84 450 300 10;
+#X obj 102 121 gemhead 50;
+#X obj 103 140 alpha 1;
+#X obj 102 185 outlet;
+#X obj 103 163 pix_video;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 3 0 2 0;

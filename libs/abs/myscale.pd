@@ -13,7 +13,7 @@
 #X text 476 16 output max;
 #X text 84 31 data to be scaled;
 #X obj 562 30 inlet reset;
-#N canvas 693 158 484 377 output 0;
+#N canvas 690 163 484 377 output 1;
 #X obj 6 23 inlet;
 #X obj 294 25 inlet;
 #X obj 6 330 outlet;
@@ -30,8 +30,8 @@
 #X obj 39 243 trigger bang float;
 #X obj 38 76 trigger bang bang;
 #X obj 204 185 purepd/float_argument \$2 1;
-#X floatatom 215 208 5 0 0 0 - - -;
-#X floatatom 36 208 5 0 0 0 - - -;
+#X floatatom 215 208 5 0 0 0 - - -, f 5;
+#X floatatom 36 208 5 0 0 0 - - -, f 5;
 #X msg 207 163 bang;
 #X obj 48 102 float \$1;
 #X obj 48 123 select 0;
@@ -40,7 +40,6 @@
 #X text 124 110 since Pd inits unused vars to 0 \, [float_argument]
 uses 0 to mean no argument for \$1. But we need 0 \, so we have to
 set up this extra test.;
-#X obj 38 53 initbang;
 #X obj 95 49 loadbang;
 #X connect 0 0 8 0;
 #X connect 1 0 12 0;
@@ -62,7 +61,6 @@ set up this extra test.;
 #X connect 20 0 11 0;
 #X connect 21 0 11 0;
 #X connect 23 0 13 0;
-#X connect 24 0 13 0;
 #X restore 428 273 pd output range;
 #N canvas 463 201 389 220 track 0;
 #X obj 168 22 inlet;

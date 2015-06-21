@@ -1,6 +1,6 @@
-#N canvas 375 178 857 300 10;
+#N canvas -46 215 857 300 10;
 #X msg 150 175 1 0.3 0.4 0.5;
-#X floatatom 250 143 5 0 0 0 - - -;
+#X floatatom 250 143 5 0 0 0 - - -, f 5;
 #X obj 69 56 inlet;
 #X obj 69 257 outlet;
 #X msg 141 154 0.7 0.9 0.2 0.5;
@@ -11,11 +11,11 @@
 1;
 #X obj 250 49 metro 50;
 #X obj 163 22 vsl 17 51 0 1 0 0 empty R1 empty 0 -9 0 10 -258113 -1
--1 0 1;
+-1 1200 1;
 #X obj 186 23 vsl 17 51 0 1 0 0 empty G1 empty 0 -9 0 10 -4034 -1 -1
-0 1;
+2400 1;
 #X obj 209 23 vsl 17 51 0 1 0 0 empty B1 empty 0 -9 0 10 -4032 -1 -1
-0 1;
+1500 1;
 #X obj 154 92 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 69 235 libs/glsl/qfx laplace;
@@ -32,7 +32,7 @@
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X restore 553 85 pd init;
-#N canvas 148 87 633 305 osc 1;
+#N canvas 148 87 633 305 osc 0;
 #X obj 178 55 libs/kollabs/osc_bi q /q/qfx/laplace/\$1/auto;
 #X obj 177 75 libs/kollabs/osc_bi q /q/qfx/laplace/\$1/color;
 #X obj 176 93 libs/kollabs/osc_bi q /q/qfx/laplace/\$1/width;
@@ -75,7 +75,7 @@
 #X connect 23 0 8 0;
 #X connect 24 0 1 0;
 #X connect 25 0 15 0;
-#X connect 26 0 14 0;
+#X connect 26 0 3 0;
 #X connect 27 0 14 0;
 #X connect 28 0 26 1;
 #X connect 29 0 18 0;

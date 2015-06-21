@@ -1,4 +1,4 @@
-#N canvas 4 464 647 300 10;
+#N canvas 1 469 647 300 10;
 #X msg 337 224 radius \$1;
 #X obj 427 34 route radius active;
 #X obj 178 117 inlet;
@@ -21,7 +21,7 @@
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X restore 255 52 pd init;
-#N canvas 149 88 633 305 osc 1;
+#N canvas 149 88 633 305 osc 0;
 #X obj 178 55 libs/kollabs/osc_bi q /q/qfx/lighttunnel/\$1/radius;
 #X obj 178 76 libs/kollabs/osc_bi q /q/qfx/lightunnel/\$1/active;
 #X restore 255 28 pd osc;
@@ -32,7 +32,7 @@
 #X connect 1 1 4 1;
 #X connect 2 0 3 0;
 #X connect 2 0 4 0;
-#X connect 3 0 6 0;
+#X connect 3 0 7 0;
 #X connect 4 0 6 0;
 #X connect 5 0 3 1;
 #X connect 6 0 7 0;
@@ -40,7 +40,6 @@
 #X connect 8 0 4 1;
 #X connect 9 0 1 0;
 #X connect 10 0 16 0;
-#X connect 11 0 12 0;
 #X connect 12 0 10 0;
 #X connect 13 0 16 0;
 #X connect 16 0 0 0;

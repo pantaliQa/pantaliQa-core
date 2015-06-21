@@ -1,8 +1,8 @@
-#N canvas 294 204 975 412 10;
+#N canvas 276 234 975 412 10;
 #X obj -17 234 outlet;
 #X msg 421 230 dotdistance \$1;
 #X obj 421 209 * 0.1;
-#N canvas 15 362 1174 402 dotDist_presets 0;
+#N canvas 12 367 1174 402 dotDist_presets 1;
 #X obj -118 440 line;
 #X obj -118 461 outlet;
 #X obj -124 157 inlet;
@@ -58,8 +58,27 @@
 #X msg 654 144 5;
 #X obj 322 -13 inlet;
 #X obj 320 5 metro 700;
-#X obj 318 29 counter 3;
 #X obj 314 51 sel 1 2 3;
+#N canvas 0 82 450 300 counter 0;
+#X obj 266 138 + 1;
+#X obj 265 200 sel 3;
+#X msg 266 224 1;
+#X obj 223 107 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 229 86 inlet;
+#X obj 227 138 f 1;
+#X obj 221 187 outlet;
+#X floatatom 209 166 5 0 0 0 - - -, f 5;
+#X connect 0 0 5 1;
+#X connect 1 0 2 0;
+#X connect 2 0 5 1;
+#X connect 3 0 5 0;
+#X connect 4 0 3 0;
+#X connect 5 0 0 0;
+#X connect 5 0 1 0;
+#X connect 5 0 7 0;
+#X connect 7 0 6 0;
+#X restore 316 27 pd counter;
 #X connect 0 0 1 0;
 #X connect 2 0 21 0;
 #X connect 3 0 0 0;
@@ -152,11 +171,11 @@
 #X connect 51 0 21 0;
 #X connect 52 0 21 0;
 #X connect 53 0 54 0;
-#X connect 54 0 55 0;
-#X connect 55 0 56 0;
-#X connect 56 0 38 0;
-#X connect 56 1 42 0;
-#X connect 56 2 48 0;
+#X connect 54 0 56 0;
+#X connect 55 0 38 0;
+#X connect 55 1 42 0;
+#X connect 55 2 48 0;
+#X connect 56 0 55 0;
 #X restore 420 103 pd dotDist_presets;
 #X obj 420 45 vsl 15 51 500 6000 0 0 empty moveSpeed empty 0 -9 0 10
 -262144 -1 -1 0 1;
@@ -173,8 +192,8 @@
 #X obj 470 -19 loadbang;
 #X obj 470 -41 initbang;
 #X obj 471 -62 r /q/qfx/led/\$1/speed;
-#X obj 528 42 r /q/qfx/led/\$1/preset;
-#X obj 586 100 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 565 46 r /q/qfx/led/\$1/preset;
+#X obj 576 86 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 338 -81 route distance active speed preset auto;
 #X obj 625 102 r /q/qfx/led/\$1/auto;
@@ -187,7 +206,7 @@
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X restore 100 -33 pd init;
-#N canvas 148 87 633 305 osc 1;
+#N canvas 148 87 633 305 osc 0;
 #X obj 178 55 libs/kollabs/osc_bi q /q/qfx/led/\$1/distance;
 #X obj 178 76 libs/kollabs/osc_bi q /q/qfx/led/\$1/active;
 #X obj 178 98 libs/kollabs/osc_bi q /q/qfx/led/\$1/speed;
@@ -213,7 +232,6 @@
 #X connect 13 0 3 0;
 #X connect 14 0 13 0;
 #X connect 15 0 14 0;
-#X connect 16 0 15 0;
 #X connect 17 0 4 0;
 #X connect 19 0 3 2;
 #X connect 20 0 25 0;

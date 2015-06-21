@@ -1,8 +1,8 @@
-#N canvas 468 301 450 300 10;
-#X floatatom 237 195 5 0 0 0 - - -;
+#N canvas 95 237 450 300 10;
+#X floatatom 237 195 5 0 0 0 - - -, f 5;
 #X msg 236 238 width \$1;
 #X obj 237 216 * 0.1;
-#X floatatom 213 120 5 0 0 0 - - -;
+#X floatatom 213 120 5 0 0 0 - - -, f 5;
 #X obj 213 141 * 0.1;
 #X msg 212 163 height \$1;
 #X obj 116 149 inlet;

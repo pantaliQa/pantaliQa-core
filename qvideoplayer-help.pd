@@ -1,4 +1,4 @@
-#N canvas 523 288 645 300 10;
+#N canvas 517 298 830 300 10;
 #X obj 129 101 qvideoplayer;
 #X obj 42 45 openpanel;
 #X obj 42 18 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -32,22 +32,22 @@
 #X obj 230 157 route end totalframe progress;
 #X obj 230 204 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X floatatom 270 206 5 0 0 0 - - -;
+#X floatatom 270 206 5 0 0 0 - - -, f 5;
 #X obj 462 222 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 5952 1;
+-1 -1 0 1;
 #X msg 228 15 begin;
 #X msg 413 42 fps 25;
-#X msg 354 93 ms 3000;
 #X obj 462 178 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 4300 1;
+-1 -1 0 1;
 #X obj 462 200 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6300 1;
+-1 -1 0 1;
 #X msg 490 15 loopin \$1;
 #X msg 499 45 loopout \$1;
 #X obj 462 253 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 4300 1;
+-1 -1 0 1;
 #X msg 310 14 scratch \$1;
 #X msg 413 15 fps 50;
+#X msg 355 93 ms 3000;
 #X connect 0 0 7 0;
 #X connect 0 1 11 0;
 #X connect 1 0 3 0;
@@ -63,11 +63,11 @@
 #X connect 11 2 14 0;
 #X connect 15 0 0 0;
 #X connect 16 0 0 0;
-#X connect 17 0 0 0;
+#X connect 17 0 19 0;
 #X connect 18 0 20 0;
-#X connect 19 0 21 0;
+#X connect 19 0 0 0;
 #X connect 20 0 0 0;
-#X connect 21 0 0 0;
-#X connect 22 0 23 0;
+#X connect 21 0 22 0;
+#X connect 22 0 0 0;
 #X connect 23 0 0 0;
 #X connect 24 0 0 0;

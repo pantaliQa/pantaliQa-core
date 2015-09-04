@@ -1,4 +1,4 @@
-#N canvas 274 414 1646 663 10;
+#N canvas 0 54 1920 1026 10;
 #X declare -path libs/abs;
 #X declare -path libs/abs;
 #X declare -path libs/glsl;
@@ -95,28 +95,30 @@
 #X msg 364 979 color \$1 \$2 \$3;
 #X obj 924 274 qaudio, f 20;
 #X obj 899 374 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 4367 1;
+-1 -1 0 1;
 #X obj 976 371 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 2927 1;
+-1 -1 0 1;
 #X obj 1052 368 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 2842 1;
+-1 -1 0 1;
 #X obj 1118 399 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 285 146 qtext uno;
-#X msg 281 94 font;
-#X obj 345 34 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+#X obj 318 156 qtext uno;
+#X msg 314 104 font;
+#X obj 378 44 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 1600 1;
+#X msg 379 118 size \$1;
+#X obj 473 -20 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 6300 1;
+#X obj 502 -22 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 2600 1;
+#X obj 532 -22 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X msg 346 108 size \$1;
-#X obj 440 -30 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 469 -32 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 499 -32 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 438 112 pack f f f;
-#X obj 499 40 t b f;
-#X obj 471 75 t b f;
-#X msg 438 147 color \$1 \$2 \$3;
+#X obj 471 122 pack f f f;
+#X obj 532 50 t b f;
+#X obj 504 85 t b f;
+#X msg 471 157 color \$1 \$2 \$3;
+#X msg 632 128 read;
+#X msg 678 130 text ciao ciao;
 #X connect 0 0 2 0;
 #X connect 1 0 19 0;
 #X connect 4 0 3 0;
@@ -166,7 +168,6 @@
 #X connect 51 0 50 0;
 #X connect 52 0 54 1;
 #X connect 53 0 52 0;
-#X connect 54 0 32 0;
 #X connect 55 0 58 0;
 #X connect 56 0 60 0;
 #X connect 57 0 59 0;
@@ -180,6 +181,7 @@
 #X connect 62 1 64 0;
 #X connect 62 2 65 0;
 #X connect 62 3 66 0;
+#X connect 67 0 32 0;
 #X connect 68 0 67 0;
 #X connect 69 0 70 0;
 #X connect 70 0 67 0;
@@ -192,3 +194,5 @@
 #X connect 76 0 71 0;
 #X connect 76 1 74 1;
 #X connect 77 0 67 0;
+#X connect 78 0 67 0;
+#X connect 79 0 67 0;

@@ -1,0 +1,3 @@
+Map_black_to;
+Map_white_to;
+Tint_amount;

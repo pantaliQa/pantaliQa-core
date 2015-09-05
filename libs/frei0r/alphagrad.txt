@@ -1,0 +1,6 @@
+Position;
+Transition_width;
+Tilt;
+Min;
+Max;
+Operation;

@@ -1,0 +1,7 @@
+R;
+G;
+B;
+Action;
+Keep_luma;
+Alpha_controlled;
+Luma_formula;

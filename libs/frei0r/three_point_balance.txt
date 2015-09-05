@@ -1,0 +1,5 @@
+Black_color;
+Gray_color;
+White_color;
+Split_preview;
+Source_image_on_left_side;

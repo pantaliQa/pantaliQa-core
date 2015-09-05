@@ -1,0 +1,8 @@
+Channel;
+Input_black_level;
+Input_white_level;
+Gamma;
+Black_output;
+White_output;
+Show_histogram;
+Histogram_position;

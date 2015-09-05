@@ -1,0 +1,11 @@
+X_axis_rotation;
+Y_axis_rotation;
+Z_axis_rotation;
+X_axis_rotation_rate;
+Y_axis_rotation_rate;
+Z_axis_rotation_rate;
+Center_position_(X);
+Center_position_(Y);
+Invert_rotation_assignment;
+Don't_blank_mask;
+Fill_with_image_or_black;

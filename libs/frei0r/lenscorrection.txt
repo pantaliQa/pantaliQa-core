@@ -1,0 +1,5 @@
+xcenter;
+ycenter;
+correctionnearcenter;
+correctionnearedges;
+brightness;

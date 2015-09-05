@@ -1,0 +1,8 @@
+Measurement;
+X;
+Y;
+X_size;
+Y_size;
+256_scale;
+Show_alpha;
+Big_window;

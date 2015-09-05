@@ -1,0 +1,6 @@
+Channel;
+Show_curves;
+Graph_position;
+Curve_point_number;
+Luma_formula;
+Bézier_spline;

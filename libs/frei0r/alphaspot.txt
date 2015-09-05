@@ -1,0 +1,10 @@
+Shape;
+Position_X;
+Position_Y;
+Size_X;
+Size_Y;
+Tilt;
+Transition_width;
+Min;
+Max;
+Operation;

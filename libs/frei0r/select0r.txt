@@ -1,0 +1,9 @@
+Color_to_select;
+Invert_selection;
+Delta_R_/_A_/_Hue;
+Delta_G_/_B_/_Chroma;
+Delta_B_/_I_/_I;
+Selection_subspace;
+Subspace_shape;
+Edge_mode;
+Operation;

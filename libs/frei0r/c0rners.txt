@@ -1,0 +1,15 @@
+Corner_1_X;
+Corner_1_Y;
+Corner_2_X;
+Corner_2_Y;
+Corner_3_X;
+Corner_3_Y;
+Corner_4_X;
+Corner_4_Y;
+Enable_Stretch;
+Stretch_X;
+Stretch_Y;
+Interpolator;
+Transparent_Background;
+Feather_Alpha;
+Alpha_operation;

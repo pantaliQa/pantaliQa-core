@@ -1,0 +1,2 @@
+barSize;
+pointerMethod;

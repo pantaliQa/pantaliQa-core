@@ -1,0 +1,16 @@
+sensitivity;
+backgroundWeight;
+thresholdBrightness;
+thresholdDifference;
+thresholdDiffSum;
+dim;
+saturation;
+lowerOverexposure;
+statsBrightness;
+statsDifference;
+statsDiffSum;
+reset;
+transparentBackground;
+blackReference;
+longAlpha;
+nonlinearDim;

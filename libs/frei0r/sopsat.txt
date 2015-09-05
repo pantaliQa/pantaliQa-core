@@ -1,0 +1,13 @@
+rSlope;
+gSlope;
+bSlope;
+aSlope;
+rOffset;
+gOffset;
+bOffset;
+aOffset;
+rPower;
+gPower;
+bPower;
+aPower;
+saturation;

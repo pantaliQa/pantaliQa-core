@@ -1,6 +1,0 @@
-1_speed;
-2_speed;
-3_speed;
-4_speed;
-1_move;
-2_move;

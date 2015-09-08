@@ -8,25 +8,26 @@
 #X declare -path libs/abs;
 #X declare -path libs/rj;
 #X declare -path libs/abs;
-#X msg 23 28 create;
-#X obj 42 145 qcam uno, f 13;
-#X obj 22 61 qwin 640 480;
-#X obj 182 144 qimage uno;
-#X msg 183 107 open;
-#X obj 35 303 qrepetition uno;
-#X msg 156 295 repetition \$1;
-#X floatatom 155 264 5 0 0 0 - - -, f 5;
-#X msg 250 293 autoX \$1;
-#X obj 248 271 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X declare -path libs/abs;
+#X msg 23 -140 create;
+#X obj 24 -32 qcam uno, f 13;
+#X obj 22 -107 qwin 640 480;
+#X obj 182 -24 qimage uno;
+#X msg 183 -61 open;
+#X obj 35 135 qrepetition uno;
+#X msg 156 127 repetition \$1;
+#X floatatom 155 96 5 0 0 0 - - -, f 5;
+#X msg 250 125 autoX \$1;
+#X obj 248 103 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 311 269 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 311 101 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X msg 312 291 autoY \$1;
-#X obj 371 270 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X msg 312 123 autoY \$1;
+#X obj 371 102 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X msg 372 293 autoZ \$1;
-#X msg 438 294 speed \$1;
-#X obj 437 214 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+#X msg 372 125 autoZ \$1;
+#X msg 438 126 speed \$1;
+#X obj 437 46 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 39 418 qfx-blur uno;
 #X msg 135 404 active \$1;
@@ -47,11 +48,11 @@
 #X msg 318 528 speed \$1;
 #X msg 601 1239 fullscreen;
 #X obj 265 1039 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 1300 1;
 #X msg 372 1107 alpha \$1;
 #X obj 371 1033 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 37 1192 qscreen uno;
+#X obj 37 1159 qscreen uno;
 #X msg 266 1109 size \$1;
 #X obj 491 1030 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
@@ -62,7 +63,7 @@
 #X obj 268 1163 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 453 1162 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 1100 1;
 #X msg 269 1237 rotateX \$1;
 #X msg 454 1236 rotateY \$1;
 #X msg 208 628 active \$1;
@@ -93,34 +94,47 @@
 #X obj 425 872 t b f;
 #X obj 397 907 t b f;
 #X msg 364 979 color \$1 \$2 \$3;
-#X obj 924 274 qaudio, f 20;
-#X obj 899 374 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 976 371 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 1052 368 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 1118 399 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 871 -124 qaudio, f 20;
+#X obj 991 -47 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 318 156 qtext uno;
-#X msg 314 104 font;
-#X obj 378 44 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 1600 1;
-#X msg 379 118 size \$1;
-#X obj 473 -20 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+#X obj 318 -12 qtext uno;
+#X msg 314 -64 font;
+#X obj 378 -124 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 1700 1;
+#X msg 379 -50 size \$1;
+#X obj 473 -188 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 6300 1;
-#X obj 502 -22 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 2600 1;
-#X obj 532 -22 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+#X obj 502 -190 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 6000 1;
+#X obj 532 -190 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 471 122 pack f f f;
-#X obj 532 50 t b f;
-#X obj 504 85 t b f;
-#X msg 471 157 color \$1 \$2 \$3;
-#X msg 632 128 read;
-#X msg 678 130 text ciao ciao;
+#X obj 471 -46 pack f f f;
+#X obj 532 -118 t b f;
+#X obj 504 -83 t b f;
+#X msg 471 -11 color \$1 \$2 \$3;
+#X msg 632 -40 read;
+#X msg 678 -38 text ciao ciao;
+#X msg 159 247 record \$1;
+#X obj 159 229 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 228 229 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X msg 228 247 play \$1;
+#X msg 298 247 playtype normal;
+#X msg 292 271 playtype palindrome;
+#X msg 422 272 playtype random;
+#X obj 541 211 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 4400 1;
+#X msg 403 249 playtype rewind;
+#X msg 541 284 randomVelocity \$1;
+#X obj 871 -95 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 910 -97 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 949 -97 vsl 15 64 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 29 287 qvideobuffer un;
 #X connect 0 0 2 0;
-#X connect 1 0 19 0;
 #X connect 4 0 3 0;
 #X connect 6 0 5 1;
 #X connect 7 0 6 0;
@@ -177,22 +191,32 @@
 #X connect 60 0 55 0;
 #X connect 60 1 58 1;
 #X connect 61 0 54 1;
-#X connect 62 0 63 0;
-#X connect 62 1 64 0;
-#X connect 62 2 65 0;
-#X connect 62 3 66 0;
-#X connect 67 0 32 0;
-#X connect 68 0 67 0;
-#X connect 69 0 70 0;
-#X connect 70 0 67 0;
+#X connect 62 0 87 0;
+#X connect 62 1 88 0;
+#X connect 62 2 89 0;
+#X connect 62 3 63 0;
+#X connect 65 0 64 0;
+#X connect 66 0 67 0;
+#X connect 67 0 64 0;
+#X connect 68 0 71 0;
+#X connect 69 0 73 0;
+#X connect 70 0 72 0;
 #X connect 71 0 74 0;
-#X connect 72 0 76 0;
-#X connect 73 0 75 0;
-#X connect 74 0 77 0;
-#X connect 75 0 71 0;
-#X connect 75 1 74 2;
-#X connect 76 0 71 0;
-#X connect 76 1 74 1;
-#X connect 77 0 67 0;
-#X connect 78 0 67 0;
-#X connect 79 0 67 0;
+#X connect 72 0 68 0;
+#X connect 72 1 71 2;
+#X connect 73 0 68 0;
+#X connect 73 1 71 1;
+#X connect 74 0 64 0;
+#X connect 75 0 64 0;
+#X connect 76 0 64 0;
+#X connect 77 0 90 1;
+#X connect 78 0 77 0;
+#X connect 79 0 80 0;
+#X connect 80 0 90 1;
+#X connect 81 0 90 1;
+#X connect 82 0 90 1;
+#X connect 83 0 90 1;
+#X connect 84 0 86 0;
+#X connect 85 0 90 1;
+#X connect 86 0 90 1;
+#X connect 90 0 32 0;

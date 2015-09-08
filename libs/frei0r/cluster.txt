@@ -1,3 +1,0 @@
-Num;
-Dist_weight;
-Color_weight;

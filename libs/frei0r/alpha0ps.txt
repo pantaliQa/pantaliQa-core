@@ -1,6 +1,0 @@
-Display;
-Display_input_alpha;
-Operation;
-Threshold;
-Shrink/grow_amount;
-Invert;

@@ -1,8 +1,0 @@
-Amount;
-DeFish;
-Type;
-Scaling;
-Manual_Scale;
-Interpolator;
-Aspect_type;
-Manual_Aspect;

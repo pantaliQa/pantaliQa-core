@@ -1,11 +1,11 @@
-#N canvas 169 495 1614 567 10;
+#N canvas 166 500 1614 567 10;
 #X declare -path libs/abs;
 #X obj 306 178 gemhead 20;
 #X obj 334 431 gemhead;
 #X obj 338 459 pix_texture;
 #X obj 341 491 outlet;
 #X obj 306 220 translateXYZ 0 0 -1.1;
-#X obj 1059 32 inlet;
+#X obj 1056 29 inlet;
 #X msg 247 417 rectangle 1;
 #X msg 800 222 load 0 1;
 #X obj 798 198 loadbang;

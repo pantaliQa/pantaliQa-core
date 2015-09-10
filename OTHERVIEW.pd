@@ -1,23 +1,7 @@
-#N canvas 0 54 1920 1026 10;
-#X declare -path libs/abs;
-#X declare -path libs/abs;
-#X declare -path libs/glsl;
-#X declare -path libs/abs;
-#X declare -path libs/abs;
-#X declare -path libs/abs;
+#N canvas 0 87 1905 998 10;
 #X declare -path libs/rj;
 #X declare -path libs/abs;
-#X declare -path libs/abs;
-#X declare -path libs/abs;
-#X declare -path libs/abs;
-#X declare -path libs/abs;
-#X declare -path libs/abs;
-#X declare -path libs/abs;
-#X declare -path libs/abs;
-#X declare -path libs/abs;
-#X declare -path libs/abs;
-#X declare -path libs/abs;
-#X declare -path libs/abs;
+#X declare -path libs/glsl;
 #X msg 192 -129 create;
 #X obj 22 -107 qwin 640 480;
 #X obj 35 420 qimage uno;
@@ -256,6 +240,7 @@
 #X obj 7 3123 cnv 15 800 20 empty empty Output 20 12 0 14 -233017 -66577
 0;
 #X obj 1005 3466 end;
+#X obj 34 -166 libs/abs/init;
 #X connect 0 0 1 0;
 #X connect 3 0 2 0;
 #X connect 5 0 4 1;

@@ -1,0 +1,5 @@
+#N canvas 558 172 365 195 10;
+#X declare -path libs/abs;
+#X declare -path libs/glsl;
+#X obj 120 57 declare -path libs/abs;
+#X obj 120 78 declare -path libs/glsl;

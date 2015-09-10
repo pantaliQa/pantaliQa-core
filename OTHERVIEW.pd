@@ -1,5 +1,6 @@
-#N canvas 0 87 1905 998 10;
+#N canvas 0 97 1905 998 10;
 #X declare -path libs/rj;
+#X declare -path relative_path_of_the_library;
 #X declare -path libs/abs;
 #X declare -path libs/glsl;
 #X msg 192 -129 create;
@@ -240,7 +241,8 @@
 #X obj 7 3123 cnv 15 800 20 empty empty Output 20 12 0 14 -233017 -66577
 0;
 #X obj 1005 3466 end;
-#X obj 34 -166 libs/abs/init;
+#X obj 135 -178 declare -path relative_path_of_the_library;
+#X obj 22 -176 libs/abs/import;
 #X connect 0 0 1 0;
 #X connect 3 0 2 0;
 #X connect 5 0 4 1;

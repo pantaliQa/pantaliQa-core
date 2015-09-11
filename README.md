@@ -17,11 +17,11 @@ GUI
 ===
 PantaliQa-core is part of PantaliQa project and is intended to be imported in other patch systems. One of the connected projects is a gui system (using pd-l2ork or wx-python) which will be in charge to get get midi, OSC, keyboard signals and assign them to the objects dynamically. For this reason pantaliQa-core doesn't support any of this library. 
 
-INSTRUCTION
+INSTRUCTIONS
 ===========
 Check the wiki: https://github.com/pantaliQa/pantaliQa-core/wiki 
 
-THE NAME
+NAME
 ========
 This project came from an older one called Qeve and presented during III international Puredata conference in Sao Paulo: this the reason for "Q" letter Brand of the project kind of.
 Pantalica is the oldest necropolis in Europe, situated in Sicily, my island of origin. The first time I design this new project I was there and the name is a celebration of that moment.

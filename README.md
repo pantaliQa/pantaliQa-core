@@ -20,7 +20,7 @@ PantaliQa-core is intended to be imported in other patch systems. One of the con
 
 INSTRUCTION
 ===========
-Check the wiki
+Check the wiki: https://github.com/pantaliQa/pantaliQa-core/wiki 
 
 THE NAME
 ========

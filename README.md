@@ -1,7 +1,6 @@
 pantaliQa-core
 ==============
 
-Description
 pantaliQa-core is a collection of puredata patches for video manipulation in realtime. 
 It has been developed with the aim to prototype vjing kind of application in puredata+Gem. 
 It is based on puredata vanilla, some library packaged under debian/ubuntu multimedia repository and it was designed having in mind pdp external but using the Gem (opengl) library.
@@ -16,7 +15,7 @@ Every property is normalized between 0 and 1.
 
 GUI
 ===
-PantaliQa-core is intended to be imported in other patch systems. One of the connected projects is to build a gui system (using pd-l2ork or wx-python) which will be in charge to get get midi, OSC, keyboard signals and assign them to the objects dynamically. For this reason pantaliQa-core doesn't support any of this library. 
+PantaliQa-core is part of PantaliQa project and is intended to be imported in other patch systems. One of the connected projects is a gui system (using pd-l2ork or wx-python) which will be in charge to get get midi, OSC, keyboard signals and assign them to the objects dynamically. For this reason pantaliQa-core doesn't support any of this library. 
 
 INSTRUCTION
 ===========
@@ -26,6 +25,15 @@ THE NAME
 ========
 This project came from an older one called Qeve and presented during III international Puredata conference in Sao Paulo: this the reason for "Q" letter Brand of the project kind of.
 Pantalica is the oldest necropolis in Europe, situated in Sicily, my island of origin. The first time I design this new project I was there and the name is a celebration of that moment.
+
+
+THANKS
+======
+
+PantaliQa-core is develop by my, Luca_at_estereotips_dot_net in my free time.
+It has been possible thanks to the support, testing effort and use of Luca Franceschini.
+None of thing would be possible without the great puredata community, the developpers and the users both.
+
 
 
 

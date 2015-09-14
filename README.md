@@ -32,7 +32,8 @@ THANKS
 
 PantaliQa-core is develop by my, Luca_at_estereotips_dot_net in my free time.
 It has been possible thanks to the support, testing effort and use of Luca Franceschini.
-None of thing would be possible without the great puredata community, the developpers and the users both.
+None of this would be possible without the great puredata community, the developpers and the users both.
+Expecially thanks to the devs of Extended Toolkit from which I copied some abstraction.
 
 
 

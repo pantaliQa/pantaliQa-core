@@ -1,11 +1,11 @@
-#N canvas 123 207 1305 865 10;
+#N canvas 114 194 1305 865 10;
 #X text 690 -104 screen methods:;
 #X text 735 -71 alpha;
 #X obj 690 101 inlet;
 #X text 733 -90 fullscreen;
 #X text 734 -61 translateX;
 #X text 734 -50 translateY;
-#X obj 195 596 rectangle 2 1;
+#X obj 195 701 rectangle 2 1;
 #X obj 194 319 translateXYZ 0 0 0;
 #X obj 195 -143 inlet;
 #N canvas 0 417 450 382 fullscreen 0;
@@ -46,14 +46,14 @@
 #X obj 235 114 r /q/screen/\$1/rotate/y;
 #X obj 229 275 r /q/screen/\$1/position/x;
 #X obj 265 298 r /q/screen/\$1/position/y;
-#X obj 275 426 r /q/screen/\$1/alpha;
+#X obj 275 531 r /q/screen/\$1/alpha;
 #X obj 737 201 s /q/screen/\$1/alpha;
 #X obj 980 204 s /q/screen/\$1/rotate/x;
 #X obj 1043 226 s /q/screen/\$1/rotate/y;
 #X obj 1039 29 namecanvas \$1;
-#X obj 215 357 r /q/screen/\$1/color/r;
-#X obj 234 381 r /q/screen/\$1/color/g;
-#X obj 254 404 r /q/screen/\$1/color/b;
+#X obj 215 462 r /q/screen/\$1/color/r;
+#X obj 234 486 r /q/screen/\$1/color/g;
+#X obj 254 509 r /q/screen/\$1/color/b;
 #X obj 234 138 * 360;
 #X obj 220 67 * 360;
 #N canvas 14 765 450 300 fullscreen 0;
@@ -91,9 +91,9 @@
 #X connect 9 1 7 0;
 #X connect 11 0 6 0;
 #X connect 11 1 10 0;
-#X restore 207 505 pd fullscreen;
-#X obj 232 550 s /q/screeen/\$1/fullX;
-#X obj 207 528 t f f;
+#X restore 207 610 pd fullscreen;
+#X obj 232 655 s /q/screeen/\$1/fullX;
+#X obj 207 633 t f f;
 #N canvas 668 364 852 373 size 0;
 #X obj 137 -66 r /q/screen/\$1/size;
 #X obj 137 -15 t f f;
@@ -110,7 +110,7 @@
 #X connect 3 0 2 1;
 #X connect 6 0 5 0;
 #X connect 7 0 4 0;
-#X restore 320 568 pd size;
+#X restore 320 673 pd size;
 #N canvas 0 97 788 576 translate_proportional 0;
 #X obj 330 428 s /q/screen/\$1/position/x;
 #X obj 553 427 s /q/screen/\$1/position/y;
@@ -153,14 +153,15 @@
 #X connect 18 1 17 0;
 #X connect 19 0 18 0;
 #X restore 873 288 pd translate_proportional;
-#X obj 194 450 colorRGB 1 1 1;
+#X obj 194 555 colorRGB 1 1 1;
 #X obj 353 -103 once;
 #X obj 195 -122 t a b;
 #X obj 355 -80 list prepend \$1;
 #X msg 354 -61 \; Qwin.getdim bang \; /q/screen/\$1/fullscreen bang
 ;
+#X obj 194 414 alpha 0;
 #X connect 2 0 12 0;
-#X connect 7 0 42 0;
+#X connect 7 0 47 0;
 #X connect 8 0 44 0;
 #X connect 12 0 9 0;
 #X connect 12 1 28 0;
@@ -198,3 +199,4 @@
 #X connect 44 0 18 0;
 #X connect 44 1 43 0;
 #X connect 45 0 46 0;
+#X connect 47 0 42 0;

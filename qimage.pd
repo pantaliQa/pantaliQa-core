@@ -1,4 +1,4 @@
-#N canvas 171 412 1023 663 10;
+#N canvas 168 417 1023 663 10;
 #X obj 520 174 openpanel;
 #X obj 696 276 list trim;
 #N canvas 177 390 392 196 init 0;
@@ -29,7 +29,6 @@
 #X obj 409 290 s /q/qimage/\$1/flip/vertical;
 #X obj 122 544 namecanvas \$1;
 #X obj 500 95 t a b;
-#X obj 500 57 alpha 1;
 #X text 102 488 (c)2014 Luca Carrubb \; modified for pantaliQa-core
 ;
 #X obj 291 222 route open horizontal vertical load;
@@ -47,18 +46,17 @@
 #X connect 9 0 6 0;
 #X connect 9 1 3 0;
 #X connect 10 1 9 0;
-#X connect 11 0 21 0;
+#X connect 11 0 20 0;
 #X connect 13 0 0 0;
-#X connect 14 0 19 0;
+#X connect 14 0 18 0;
 #X connect 18 0 5 0;
 #X connect 18 1 2 0;
-#X connect 19 0 18 0;
-#X connect 21 0 12 0;
-#X connect 21 1 15 0;
-#X connect 21 2 16 0;
-#X connect 21 3 10 0;
-#X connect 22 0 23 0;
-#X connect 23 0 8 1;
-#X connect 24 0 25 0;
-#X connect 25 0 8 1;
+#X connect 20 0 12 0;
+#X connect 20 1 15 0;
+#X connect 20 2 16 0;
+#X connect 20 3 10 0;
+#X connect 21 0 22 0;
+#X connect 22 0 8 1;
+#X connect 23 0 24 0;
+#X connect 24 0 8 1;
 #X coords 0 663 1 662 180 67 0;

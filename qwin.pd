@@ -1,4 +1,4 @@
-#N canvas 745 372 1137 683 10;
+#N canvas 426 397 1137 683 10;
 #X obj -17 44 cnv 15 800 16 empty empty QWIN_is_copied_from_EXTENDED_VIEW_GEM_WINDOW_MODULE
 20 8 0 14 -233017 -66577 0;
 #N canvas 897 148 377 353 init 0;
@@ -94,7 +94,7 @@ title info;
 #X obj 621 641 unpack f f;
 #X obj 612 673 f;
 #X obj 658 671 f;
-#X obj 609 556 r Qwin.getdim;
+#X obj 610 556 r Qwin.getdim;
 #X obj 609 578 t b b;
 #X obj 621 711 pack f f;
 #X obj 614 737 unpack f f;
@@ -103,6 +103,9 @@ title info;
 #X floatatom 565 805 5 0 0 0 - - -, f 5;
 #X msg 408 133 title pantaliQa-output;
 #X obj 319 669 s /q/qwin/dimen;
+#X floatatom 634 832 5 0 0 0 - - -, f 5;
+#X obj 724 565 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 3 0 35 0;
 #X connect 4 0 44 0;
 #X connect 4 1 43 0;
@@ -189,5 +192,7 @@ title info;
 #X connect 88 0 89 0;
 #X connect 88 0 91 0;
 #X connect 88 1 90 0;
+#X connect 88 1 94 0;
 #X connect 92 0 2 0;
+#X connect 95 0 86 0;
 #X coords 0 683 1 682 360 79 0;
